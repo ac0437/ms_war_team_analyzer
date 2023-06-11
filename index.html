@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="./clan-icon-2.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS War Team Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="non-character-container">
+    <h2>Midnight Sage War Team Analyzer</h2>
+    <div class="analysis hide"></div>
+    <div class="table-container">
+      <table class="hide">
+        <caption>Team</caption>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Banned</th>
+            <th>Stunner</th>
+            <th>Chakra Drain</th>
+            <th>AOE (Offensive)</th>
+            <th>Healer</th>
+            <th>Counter/Reflect</th>
+            <th>Remove Character</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <label for="search">Search for a character</label>
+    <input type="text" id="search">
+    <div>
+      <button class="search-button button">Search</button>
+      <button class="reset-button button">Reset</button>
+    </div>
+  </div>
+  <div class="cards">
+    <character-card></character-card>
+  </div>
+  <script src="Card.js" defer></script>
+  <script src="main.js"></script>
+</body>
+</html>
